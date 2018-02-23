@@ -1,0 +1,40 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: Arial;
+}
+
+.container {
+    /* outline: 2px dotted blue; */
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #1b4d86;
+    text-align: center;
+}
+
+#pics {
+    outline: 1px dotted green;
+    width: 180px;
+    margin: 20px auto;
+    margin-top: 20px;
+
+}
+
+#pics img {
+   display: block;
+   margin-bottom: 5px;
+
+}
+
+p {
+    font-size: 20px;
+    color: #1b4d86;
+    margin-left: 20px;
+  
+}

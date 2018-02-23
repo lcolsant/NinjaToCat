@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Ninja To Cat</title>
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('img').click(function(){
+                $(this).attr('temp', $(this).attr('src'));
+				$(this).attr('src', $(this).attr('alt-src'));
+				$(this).attr('alt-src', $(this).attr('temp'));
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery - assignment 2</h1>
+        <div id="pics">
+            <img src="./images/cat0.png" alt="cat" alt-src="./images/cat1.png" temp="">
+            <img src="./images/cat1.png" alt="cat" alt-src="./images/cat2.png" temp="">
+            <img src="./images/ninja0.png" alt="ninja" alt-src="./images/ninja1.png" temp="">
+            <img src="./images/ninja1.png" alt="ninja" alt-src="./images/ninja2.png" temp="">
+            <img src="./images/ninja2.png" alt="ninja" alt-src="./images/ninja3.png" temp="">
+        </div>
+        <p>Click parts of the images above to change them to other images</p>
+    </div>
+</body>
+</html>
